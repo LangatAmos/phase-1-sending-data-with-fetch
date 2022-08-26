@@ -21,7 +21,7 @@ describe( "submitData()", () => {
   it( "makes a POST request to /users with a name and email", async () => {
     let reqBody
     let headers
-    nock( 'http://localhost:3000' )
+    nock( ' http://localhost:3000')
       .post( '/users' )
       .reply( 201, function ( uri, requestBody ) {
         reqBody = requestBody
